@@ -1,0 +1,5 @@
+/* global */
+@import "src/css/global/reboot.css";
+@import "src/css/global/fonts.css";
+@import "src/css/global/container.css";
+@import "src/css/global/visually-hidden.css";
