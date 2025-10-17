@@ -3,3 +3,29 @@
 @import "src/css/global/fonts.css";
 @import "src/css/global/container.css";
 @import "src/css/global/visually-hidden.css";
+
+/* Добавьте в index.css или создайте отдельный файл стилей */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer-content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.datetime-info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.datetime-info span {
+  display: block;
+  margin: 5px 0;
+}

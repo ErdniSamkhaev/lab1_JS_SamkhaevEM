@@ -8,35 +8,18 @@
   </head>
   <body>
     <div class="container" id="mainContainer">
-      <!-- Заголовок с ID для возможного изменения -->
-      <h1 id="mainTitle">Эрдни</h1>
-
-      <!-- Изображение с ID для возможных манипуляций -->
-      <img
-        src="img/uzkii.jpg"
-        alt="Эрдни"
-        width="200"
-        height="200"
-        id="profileImage"
-      />
+      <div id="headerContainer"></div>
 
       <!-- Секция "О себе" -->
       <div class="about-section" id="aboutSection">
         <h2 id="aboutTitle">О себе</h2>
-        <div id="aboutContent">
-          <p>Привет! Меня зовут Эрдни, и я увлекаюсь веб-разработкой.</p>
-          <p>
-            Изучаю JavaScript и современные технологии для создания
-            интерактивных веб-приложений.
-          </p>
-        </div>
+        <div id="aboutContent"></div>
       </div>
 
-      <!-- Секция увлечений -->
+      <!-- Остальные секции остаются без изменений -->
       <div class="interests-section" id="interestsSection">
         <h3 id="interestsTitle">Мои увлечения</h3>
         <ul id="hobbyList"></ul>
-        <!-- Добавляем элемент для отображения статуса -->
         <p id="hobbyStatus" class="status-message">Список увлечений пуст</p>
       </div>
 
@@ -44,24 +27,19 @@
       <div class="interactive-section" id="interactiveSection">
         <h2 id="interactiveTitle">Интерактивные элементы</h2>
 
-        <!-- Форма ввода имени -->
         <div class="name-input" id="nameInputSection">
           <label for="visitorName">Как вас зовут?</label>
           <input type="text" id="visitorName" placeholder="Введите ваше имя" />
           <button id="greetButton">Поприветствовать</button>
-          <!-- Элемент для отображения приветствия -->
           <div id="greetingMessage" class="greeting-display"></div>
         </div>
 
-        <!-- Переключатель темы -->
         <div class="theme-switcher" id="themeSwitcherSection">
           <label for="themeToggle">Темная тема</label>
           <input type="checkbox" id="themeToggle" />
-          <!-- Элемент для отображения текущей темы -->
           <span id="currentTheme" class="theme-indicator">Светлая тема</span>
         </div>
 
-        <!-- Дополнительные элементы для будущих функций -->
         <div class="additional-controls" id="additionalControls">
           <button id="addHobbyButton">Добавить увлечение</button>
           <button id="randomFactButton">Случайный факт</button>
@@ -69,6 +47,16 @@
         </div>
       </div>
     </div>
-    <script src="src/index.js"></script>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Эрдни Самхаев. Все права защищены.</p>
+        <div class="datetime-info">
+          <span id="currentDate"></span>
+          <span id="currentTime"></span>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="src/script.js"></script>
   </body>
 </html>
