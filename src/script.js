@@ -5,9 +5,15 @@ import {
   updateDateTime,
 } from "./components/header.js";
 
-const name = "Эрдни";
-let age = 32;
+// 1. Примитивные типы данных
+const name = "Эрдни"; // строка
+let age = 32; // число
+const booleanVar = true; // булево значение
+let undefinedVar; // undefined (неопределенное значение)
+const nullVar = null; // null (пустое значение)
+const symbolVar = Symbol("уникальный символ"); // символ (ES6)
 
+// 2. Объектные типы данных. (JSON формат)
 const profile = {
   firstName: "Эрдни",
   lastName: "Самхаев",
@@ -24,6 +30,71 @@ const profile = {
     instagram: "https://instagram.com/erdnisamhaev",
   },
 };
+
+const arrayVar = [1, 2, 3, "строка", true]; // массив
+
+const functionVar = function() { // функция
+  return "Это функция";
+};
+
+const arrowFunctionVar = () => "Стрелочная функция"; // стрелочная функция
+
+// 3. Специальные типы
+const bigIntVar = 1234567890123456789012345678901234567890n; // BigInt (большие числа)
+const dateVar = new Date(); // объект Date
+const regexVar = /[a-zA-Z]/g; // регулярное выражение
+
+
+// 4. Переменные с разными областями видимости
+var globalVar = "Глобальная переменная"; // var (устаревший способ)
+let blockVar = "Блочная переменная"; // let (новый способ)
+const constantVar = "Константа"; // const (новый способ)
+
+// 5. Константы и переменные с деструктуризацией
+const [first, second, third] = [1, 2, 3]; // деструктуризация массива
+const { firstName, lastName } = profile; // деструктуризация объекта
+
+// 6. Переменные с шаблонными строками
+const templateStringVar = `Привет, ${name}! Тебе ${age} лет.`;
+
+// 7. Переменные с логическими операторами
+const andVar = true && "истина"; // логическое И
+const orVar = false || "ложь"; // логическое ИЛИ
+const nullishVar = null ?? "значение по умолчанию"; // nullish coalescing
+
+// 8. Переменные с тернарным оператором
+const ternaryVar = age >= 18 ? "совершеннолетний" : "несовершеннолетний";
+
+// 9. Переменные с операторами сравнения
+const equalVar = 10 === 10; // строгое равенство
+const notEqualVar = 10 !== 11; // строгое неравенство
+const greaterVar = 10 > 5; // больше
+const lessVar = 10 < 15; // меньше
+const greaterEqualVar = 10 >= 10; // больше или равно
+const lessEqualVar = 10 <= 10; // меньше или равно
+
+
+console.log(name, age, booleanVar, undefinedVar, nullVar, symbolVar);
+console.log(profile);
+console.log(arrayVar);
+console.log(functionVar);
+console.log(arrowFunctionVar);
+console.log(bigIntVar);
+console.log(dateVar);
+console.log(regexVar);
+console.log(globalVar, blockVar, constantVar);
+console.log(first, second, third);
+console.log(firstName, lastName);
+console.log(templateStringVar);
+console.log(andVar, orVar, nullishVar);
+console.log(ternaryVar);
+console.log(equalVar, notEqualVar, greaterVar, lessVar, greaterEqualVar, lessEqualVar);
+
+
+
+
+
+// --------------------------------------------------------------------------
 
 // Создаем заголовок и вставляем в DOM
 document.addEventListener("DOMContentLoaded", function () {
