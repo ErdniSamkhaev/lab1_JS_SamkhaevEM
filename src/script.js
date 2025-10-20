@@ -1,9 +1,6 @@
 import { hobbies } from "./components/hobby.js";
-import {
-  createHeader,
-  createFullGreeting,
-  updateDateTime,
-} from "./components/header.js";
+import { createHeader, createFullGreeting } from "./components/header.js";
+import { updateDateTime } from "./components/footer.js";
 
 // 1. Примитивные типы данных
 const name = "Эрдни"; // строка
@@ -33,7 +30,8 @@ const profile = {
 
 const arrayVar = [1, 2, 3, "строка", true]; // массив
 
-const functionVar = function() { // функция
+const functionVar = function () {
+  // функция
   return "Это функция";
 };
 
@@ -43,7 +41,6 @@ const arrowFunctionVar = () => "Стрелочная функция"; // стр�
 const bigIntVar = 1234567890123456789012345678901234567890n; // BigInt (большие числа)
 const dateVar = new Date(); // объект Date
 const regexVar = /[a-zA-Z]/g; // регулярное выражение
-
 
 // 4. Переменные с разными областями видимости
 var globalVar = "Глобальная переменная"; // var (устаревший способ)
@@ -73,7 +70,6 @@ const lessVar = 10 < 15; // меньше
 const greaterEqualVar = 10 >= 10; // больше или равно
 const lessEqualVar = 10 <= 10; // меньше или равно
 
-
 console.log(name, age, booleanVar, undefinedVar, nullVar, symbolVar);
 console.log(profile);
 console.log(arrayVar);
@@ -88,11 +84,14 @@ console.log(firstName, lastName);
 console.log(templateStringVar);
 console.log(andVar, orVar, nullishVar);
 console.log(ternaryVar);
-console.log(equalVar, notEqualVar, greaterVar, lessVar, greaterEqualVar, lessEqualVar);
-
-
-
-
+console.log(
+  equalVar,
+  notEqualVar,
+  greaterVar,
+  lessVar,
+  greaterEqualVar,
+  lessEqualVar
+);
 
 // --------------------------------------------------------------------------
 
