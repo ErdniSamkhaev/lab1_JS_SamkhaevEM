@@ -1,18 +1,3 @@
-export function createHeader(profile) {
-  return `
-      <header class="header">
-        <h1 id="mainTitle">${profile.firstName} ${profile.lastName}</h1>
-        <img 
-          src="img/uzkii.jpg" 
-          alt="${profile.firstName}" 
-          width="200" 
-          height="200" 
-          id="profileImage"
-        />
-      </header>
-    `;
-}
-
 // Функция для приветствия по времени суток
 export function getGreetingMessage() {
   const hour = new Date().getHours();
@@ -37,7 +22,3 @@ export function createFullGreeting(visitorName = null) {
     return `${greeting}, посетитель!`;
   }
 }
-
-
-
-
