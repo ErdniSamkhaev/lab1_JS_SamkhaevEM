@@ -1,0 +1,36 @@
+/* Темная тема */
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-theme .container {
+  background-color: #1a1a1a;
+}
+
+body.dark-theme a {
+  color: #e0e0e0;
+}
+
+body.dark-theme .footer {
+  background-color: #2a2a2a;
+  border-top-color: #3a3a3a;
+}
+
+body.dark-theme .footer .datetime-info {
+  color: #b0b0b0;
+}
+
+/* Дополнительные стили для темной темы элементов страницы */
+body.dark-theme .about-section,
+body.dark-theme .interests-section,
+body.dark-theme .interactive-section {
+  background-color: #242424;
+  color: #e0e0e0;
+}
+
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4 {
+  color: #f0f0f0;
+}

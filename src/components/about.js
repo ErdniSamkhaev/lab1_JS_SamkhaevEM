@@ -1,3 +1,5 @@
+import { me } from "./personClass.js";
+
 export const profile = {
   firstName: "Эрдни",
   lastName: "Самхаев",
@@ -18,7 +20,7 @@ export const profile = {
 // вывод в DOM для проверки
 const aboutContent = document.getElementById("aboutContent");
 aboutContent.innerHTML = `
-  <p>Привет! Меня зовут ${profile.firstName} ${profile.lastName}</p>
+  <p>Привет! Меня зовут ${profile.firstName} ${profile.lastName}, мне ${me.getAge()}.</p>
   <p>Год рождения: ${profile.year}</p>
   <p>Город: ${profile.city}</p>
   <p>${profile.shortBio}</p>

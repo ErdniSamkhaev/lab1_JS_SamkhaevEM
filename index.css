@@ -4,7 +4,9 @@
 @import "src/css/global/container.css";
 @import "src/css/global/visually-hidden.css";
 
-/* Добавьте в index.css или создайте отдельный файл стилей */
+/* blocks */
+@import "src/css/blocks/theme-switcher.css";
+
 .footer {
   background-color: #f8f9fa;
   padding: 20px 0;
