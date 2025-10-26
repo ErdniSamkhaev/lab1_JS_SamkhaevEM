@@ -16,24 +16,27 @@ export function toggleTheme(isDark) {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
-// Восстановление темы при загрузке страницы
-function restoreTheme() {
+// Функция инициализации
+export function initTheme() {
   const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    themeToggle.checked = true;
-    toggleTheme(true);
-  } else {
-    themeToggle.checked = false;
-    toggleTheme(false);
+  if (themeToggle && switcher && currentThemeIndicator) {
+    // Восстанавливаем тему из localStorage
+    if (savedTheme === "dark") {
+      themeToggle.checked = true;
+      body.classList.add("dark-theme");
+      currentThemeIndicator.textContent = "Темная тема";
+    } else {
+      themeToggle.checked = false;
+      body.classList.remove("dark-theme");
+      currentThemeIndicator.textContent = "Светлая тема";
+    }
+
+    // Обработчик для чекбокса
+    themeToggle.addEventListener("change", function () {
+      toggleTheme(this.checked);
+    });
   }
 }
 
-// Обработчик события для чекбокса
-if (themeToggle && switcher) {
-  themeToggle.addEventListener("change", function () {
-    toggleTheme(this.checked);
-  });
-
-  // Восстанавливаем тему при загрузке
-  restoreTheme();
-}
+// Вызываем инициализацию
+initTheme();

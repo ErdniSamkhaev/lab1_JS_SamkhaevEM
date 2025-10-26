@@ -15,7 +15,7 @@ import { helloButton } from "./utils/helloButton.js";
 import { addHobbyButton } from "./utils/addHobbyButton.js";
 import { randomFactButton } from "./utils/randomFact.js";
 import { hobbies } from "./components/hobby.js";
-import { toggleTheme } from "./utils/buttonTheme.js";
+import { initTheme } from "./utils/buttonTheme.js";
 
 console.log(name, age, booleanVar, undefinedVar, nullVar, symbolVar);
 console.log(hobbies);
@@ -44,5 +44,5 @@ document.addEventListener("DOMContentLoaded", function () {
   helloButton();
   addHobbyButton();
   randomFactButton();
-  toggleTheme();
+  initTheme();
 });
