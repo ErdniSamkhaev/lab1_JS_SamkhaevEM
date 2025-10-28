@@ -2,10 +2,10 @@
 .header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 60px 40px;
-  margin: 0 calc(-1 * (160px + 40px)) 50px calc(-1 * (160px + 40px));
+  margin: 0 0 50px 0;
   position: relative;
   overflow: hidden;
-  width: calc(100% + 400px); /* Компенсируем отрицательные маргины */
+  width: 100%;
   max-width: none;
 }
 
@@ -22,6 +22,9 @@
 }
 
 .header-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 160px;
   display: flex;
   align-items: center;
   justify-content: center;
