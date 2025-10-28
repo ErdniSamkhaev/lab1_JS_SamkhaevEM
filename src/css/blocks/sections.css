@@ -1,0 +1,122 @@
+/* Section Styles */
+.about-section,
+.interests-section,
+.interactive-section {
+  margin: 30px 0;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.about-section h2,
+.interests-section h3,
+.interactive-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #242424;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+#aboutContent,
+#hobbyList {
+  line-height: 1.8;
+  color: #333;
+}
+
+#hobbyList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#hobbyList li {
+  padding: 15px;
+  margin-bottom: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#hobbyList li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-item h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.hobby-item p {
+  margin: 8px 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.hobby-item img {
+  margin-top: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-item {
+  padding: 0;
+}
+
+.status-message {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Темная тема для секций */
+body.dark-theme .about-section,
+body.dark-theme .interests-section,
+body.dark-theme .interactive-section {
+  background-color: #242424;
+  border-color: #3a3a3a;
+}
+
+body.dark-theme .about-section h2,
+body.dark-theme .interests-section h3,
+body.dark-theme .interactive-section h2 {
+  color: #f0f0f0;
+  border-bottom-color: #4a9eff;
+}
+
+body.dark-theme #aboutContent,
+body.dark-theme #hobbyList {
+  color: #e0e0e0;
+}
+
+body.dark-theme #hobbyList li {
+  background: #2a2a2a;
+  border-left-color: #4a9eff;
+}
+
+body.dark-theme #hobbyList li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .hobby-item h4 {
+  color: #4a9eff;
+}
+
+body.dark-theme .hobby-item p {
+  color: #b0b0b0;
+}
+
+body.dark-theme .status-message {
+  color: #b0b0b0;
+  background: #2a2a2a;
+}

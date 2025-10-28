@@ -11,6 +11,12 @@
       <div id="headerContainer"></div>
       <h2 id="greeting"></h2>
 
+      <!-- Информация о последнем визите -->
+      <p
+        id="lastVisitInfo"
+        style="display: none; font-style: italic; color: #666; margin: 10px 0"
+      ></p>
+
       <!-- Секция "О себе" -->
       <div class="about-section" id="aboutSection">
         <h2 id="aboutTitle">О себе</h2>
@@ -21,7 +27,9 @@
       <div class="interests-section" id="interestsSection">
         <h3 id="interestsTitle">Мои увлечения</h3>
         <ul id="hobbyList"></ul>
-        <p id="hobbyStatus" class="status-message">Список увлечений пуст</p>
+        <p id="hobbyStatus" class="status-message">
+          Список дополнительных увлечений пуст
+        </p>
       </div>
 
       <!-- Секция "Интерактивные элементы" -->
@@ -32,9 +40,9 @@
           <label for="visitorName">Как вас зовут?</label>
           <input type="text" id="visitorName" placeholder="Введите ваше имя" />
           <button id="greetButton">Поприветствовать</button>
-          <div id="greetingMessage" class="greeting-display"></div>
         </div>
 
+        <!-- Переключатель темы -->
         <div class="theme-switcher" id="themeSwitcherSection">
           <label for="themeToggle">Темная тема</label>
           <input type="checkbox" id="themeToggle" />
@@ -43,8 +51,10 @@
 
         <div class="additional-controls" id="additionalControls">
           <button id="addHobbyButton">Добавить увлечение</button>
+          <button id="removeHobbyBtn">Удалить последнее увлечение</button>
           <button id="randomFactButton">Случайный факт</button>
           <button id="toggleAboutButton">Показать/скрыть подробности</button>
+          <button id="clearStorageBtn">Очистить сохраненные данные</button>
         </div>
       </div>
     </div>
@@ -58,6 +68,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script type="module" src="src/script.js"></script>
   </body>
 </html>

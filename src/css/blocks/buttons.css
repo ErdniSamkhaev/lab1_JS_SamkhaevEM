@@ -1,0 +1,158 @@
+/* Button Styles */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+/* Специфичные стили для кнопок */
+#greetButton {
+  background-color: #28a745;
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+#greetButton:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+#addHobbyButton {
+  background-color: #17a2b8;
+  box-shadow: 0 2px 8px rgba(23, 162, 184, 0.3);
+}
+
+#addHobbyButton:hover {
+  background-color: #138496;
+  box-shadow: 0 4px 12px rgba(23, 162, 184, 0.4);
+}
+
+#removeHobbyBtn {
+  background-color: #dc3545;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+#removeHobbyBtn:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+#randomFactButton {
+  background-color: #6f42c1;
+  box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+}
+
+#randomFactButton:hover {
+  background-color: #5a32a3;
+  box-shadow: 0 4px 12px rgba(111, 66, 193, 0.4);
+}
+
+#toggleAboutButton {
+  background-color: #fd7e14;
+  box-shadow: 0 2px 8px rgba(253, 126, 20, 0.3);
+}
+
+#toggleAboutButton:hover {
+  background-color: #e8650c;
+  box-shadow: 0 4px 12px rgba(253, 126, 20, 0.4);
+}
+
+#clearStorageBtn {
+  background-color: #6c757d;
+  box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3);
+}
+
+#clearStorageBtn:hover {
+  background-color: #5a6268;
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4);
+}
+
+/* Grid для кнопок в additional-controls */
+.additional-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Темная тема для кнопок */
+body.dark-theme button {
+  background-color: #4a9eff;
+  box-shadow: 0 2px 8px rgba(74, 158, 255, 0.3);
+}
+
+body.dark-theme button:hover {
+  background-color: #2980e6;
+  box-shadow: 0 4px 12px rgba(74, 158, 255, 0.4);
+}
+
+body.dark-theme #greetButton {
+  background-color: #2ecc71;
+  box-shadow: 0 2px 8px rgba(46, 204, 113, 0.3);
+}
+
+body.dark-theme #greetButton:hover {
+  background-color: #27ae60;
+}
+
+body.dark-theme #addHobbyButton {
+  background-color: #16a085;
+}
+
+body.dark-theme #addHobbyButton:hover {
+  background-color: #138d75;
+}
+
+body.dark-theme #removeHobbyBtn {
+  background-color: #e74c3c;
+}
+
+body.dark-theme #removeHobbyBtn:hover {
+  background-color: #c0392b;
+}
+
+body.dark-theme #randomFactButton {
+  background-color: #9b59b6;
+}
+
+body.dark-theme #randomFactButton:hover {
+  background-color: #8e44ad;
+}
+
+body.dark-theme #toggleAboutButton {
+  background-color: #e67e22;
+}
+
+body.dark-theme #toggleAboutButton:hover {
+  background-color: #d35400;
+}
+
+body.dark-theme #clearStorageBtn {
+  background-color: #7f8c8d;
+}
+
+body.dark-theme #clearStorageBtn:hover {
+  background-color: #6c757d;
+}

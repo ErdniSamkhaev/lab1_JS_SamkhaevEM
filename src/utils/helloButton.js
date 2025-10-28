@@ -1,4 +1,5 @@
 import { createFullGreeting } from "../views/header.js";
+import { saveToStorage } from "./storageUtils.js";
 
 // Обработчик для кнопки приветствия
 export function helloButton() {
@@ -11,8 +12,13 @@ export function helloButton() {
       const visitorName = visitorNameInput.value.trim();
       if (visitorName) {
         greetingId.textContent = createFullGreeting(visitorName);
+        // Сохраняем имя в localStorage
+        saveToStorage("visitorName", visitorName);
+        console.log("Имя сохранено в localStorage:", visitorName);
+        // Очищаем поле ввода после приветствия
+        visitorNameInput.value = "";
       } else {
-        greetingMessage.textContent = "Пожалуйста, введите ваше имя!";
+        greetingId.textContent = "Пожалуйста, введите ваше имя!";
       }
     });
   }
